@@ -37,7 +37,7 @@ Configuration parameters can be set in either `.env`, or through environment var
 
 2. Populate historical data:
 
-- use `docker exec exchange-api python populate.py --input-file data/exchange.csv`
+- `docker exec exchange-api python populate.py --input-file data/exchange.csv`
 
 ## Verification
 
