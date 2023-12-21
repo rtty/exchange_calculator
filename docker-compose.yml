@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  db:
+    container_name: exchange-db
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: exchange
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  app:
+    container_name: exchange-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: exchange-api-image
+    ports:
+      - '8000:8000'
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:postgres@db/exchange
+    depends_on:
+      - db

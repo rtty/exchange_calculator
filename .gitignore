@@ -1,0 +1,10 @@
+# compiled 
+__pycache__/
+*.py[cod]
+
+# logs
+*.log
+
+# ide
+.idea
+.mypy_cache
