@@ -19,7 +19,7 @@ Configuration parameters can be set in either `.env`, or through environment var
 
 1. Install requirements: `pip3 install -r requirements.txt`
 
-2. Before running application, start postgres database in docker, `docker-compose up db`
+2. Before running application, start postgres database in docker, `docker-compose up --build db`
 
 3. Run application 
 - `python main.py`
@@ -33,7 +33,7 @@ Configuration parameters can be set in either `.env`, or through environment var
 ## Docker deployment
 
 
-1. Start postgres database and app in docker, `docker-compose up`
+1. Start postgres database and app in docker, `docker-compose up --build`
 
 2. Populate historical data:
 
