@@ -21,13 +21,14 @@ Configuration parameters can be set in either `.env`, or through environment var
 
 2. Before running application, start postgres database in docker, `docker-compose up db`
 
-3. Run application - use `python main.py`
+3. Run application 
+- `python main.py`
 
-4. To run as uvicorn server - use `uvicorn main:app`
+4. To run as uvicorn server 
+- `uvicorn main:app`
 
 5. Populate historical data:
-
-- use `python populate.py --input-file data/exchange.csv`
+- `python populate.py --input-file data/exchange.csv`
 
 ## Docker deployment
 
