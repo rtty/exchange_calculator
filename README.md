@@ -7,6 +7,7 @@
 - Pip3
 - Docker
 
+
 ## Configuration
 
 Located in the file `config.py` and can be changed by setting corresponding environment variables:
